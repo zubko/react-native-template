@@ -6,6 +6,7 @@
     "pods": "bundle install && bundle exec pod install --repo-update --project-directory=ios/",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "format": "prettier --write .",
     "lint": "eslint .",
     "start": "yarn kill-port && yarn watchman-reset && yarn adb-reverse && yarn start:packager",
     "kill-port": "lsof -t -i :8081 | xargs kill || true",
